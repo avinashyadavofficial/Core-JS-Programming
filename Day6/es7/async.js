@@ -8,7 +8,7 @@ dis().then(console.log);
 
 
 async function display(){
-    let mess=await new Promise(resolve=>setTimeout(()=>resolve("Avinash Yadav"),3000));
-    console.log(mess);
+    let message=await new Promise(resolve=>setTimeout(()=>resolve("Avinash Yadav"),3000));
+    console.log(message);
 }
 display();
