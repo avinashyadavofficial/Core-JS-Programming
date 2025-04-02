@@ -1,0 +1,28 @@
+1-5: Basic String Operations
+1️⃣ Convert the string "hello world" to uppercase.
+2️⃣ Convert "HELLO WORLD" to lowercase.
+3️⃣ Find the length of the string "JavaScript".
+4️⃣ Extract "world" from the string "hello world" using a built-in method.
+5️⃣ Replace "JavaScript" with "JS" in the string "I love JavaScript".
+
+6-10: Searching & Checking
+6️⃣ Check if the string "I love coding" starts with "I love".
+7️⃣ Check if the string "I love coding" ends with "coding".
+8️⃣ Find the index of "code" in the string "Learn to code with JavaScript".
+9️⃣ Check if the string "JavaScript is great" includes "great".
+🔟 Count how many times "a" appears in "banana".
+
+11-15: Manipulation & Formatting
+1️⃣1️⃣ Remove whitespace from the string " hello world " (both start and end).
+1️⃣2️⃣ Split "apple,banana,cherry" into an array of words.
+1️⃣3️⃣ Join the array ["Hello", "World"] into a single string separated by a space.
+1️⃣4️⃣ Repeat "ha" 3 times to get "hahaha".
+1️⃣5️⃣ Convert the first letter of "javascript" to uppercase.
+
+16-20: Advanced Methods
+1️⃣6️⃣ Reverse the string "hello" using a built-in method.
+1️⃣7️⃣ Extract the first 5 characters from "JavaScript is awesome".
+1️⃣8️⃣ Remove "dog" from "The dog is barking" without using replace().
+1️⃣9️⃣ Find the character at index 4 in the string "developer".
+2️⃣0️⃣ Check if "123" is a string or not.
+
