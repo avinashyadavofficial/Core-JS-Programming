@@ -1,0 +1,79 @@
+PS C:\Users\avina\Desktop\BL_Daily_Tracker> cd Day7
+PS C:\Users\avina\Desktop\BL_Daily_Tracker\Day7> node
+Welcome to Node.js v20.17.0.
+Type ".help" for more information.
+>
+>
+> 5+5
+10
+> name="Avinash"
+'Avinash'
+> .clear
+> .exit
+PS C:\Users\avina\Desktop\BL_Daily_Tracker\Day7> node
+Welcome to Node.js v20.17.0.
+Type ".help" for more information.
+> .help
+.break    Sometimes you get stuck, this gets you out
+.clear    Alias for .break
+.editor   Enter editor mode
+.exit     Exit the REPL
+.help     Print this help message
+.load     Load JS from a file into the REPL session
+.save     Save all evaluated commands in this REPL session to a file
+
+Press Ctrl+C to abort current expression, Ctrl+D to exit the REPL
+> function add(a,b){return a+b}
+undefined
+> function add(a,b){return a+b;}
+undefined
+> add(2,3)
+5
+> 5+2
+7
+> add(2,3)
+5
+> _*2
+10
+> if(true){
+... console.log("Avinash")
+... }
+Avinash
+undefined
+> if(true){
+... return 2
+return 2
+^^^^^^
+
+Uncaught SyntaxError: Illegal return statement
+> if(true){
+... return 2;}
+return 2;}
+^^^^^^
+
+Uncaught SyntaxError: Illegal return statement
+> con
+const        continue
+
+console      constants
+
+constructor
+
+> Math.sqrt(4)
+2
+> .save repl.js
+Session saved to: repl.js
+> .load repl.js
+function add(a,b){return a+b}
+function add(a,b){return a+b;}
+add(2,3)
+5+2
+add(2,3)
+_*2
+if(true){
+console.log("Avinash")
+}
+Math.sqrt(4)
+Avinash
+2
+>
