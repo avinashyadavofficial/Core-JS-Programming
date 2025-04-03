@@ -1,0 +1,167 @@
+### Employee Wage - JavaScript Practice Questions
+
+#### 🟢 Basic Programming Constructs & Methods of Primitives
+
+1. **String Formatting:**  
+   Given an employee's first and last name as separate variables, create a formatted string `"Employee: John Doe"` using **template literals**.  
+
+2. **Parsing and Rounding Numbers:**  
+   A company calculates salaries with decimal values. Convert the salary to an integer using `parseInt()` and round it to the nearest whole number using `Math.round()`.  
+   ```js
+   let salary = "4500.75";  
+   ```
+
+3. **Checking Data Types:**
+   Write a function that takes an input and returns whether it is a **string, number, or object**.  
+   ```js
+   function checkType(value) {
+       // Your code here
+   }
+   ```
+
+#### 🟡 Arrays & Array Methods
+
+4. **Filter Employees Earning Above $5000:**  
+   Given an array of salaries, use `filter()` to return only those greater than $5000.  
+   ```js
+   let salaries = [4500, 6000, 8000, 3000, 5200];  
+   ```
+
+5. **Convert Salaries to Annual Pay:**  
+   Use `map()` to convert an array of **monthly salaries** into **annual salaries** (multiply by 12).  
+   ```js
+   let monthlySalaries = [4000, 5000, 6000, 7000];  
+   ```
+
+6. **Calculate Total Salary Expense:**  
+   Use `reduce()` to sum up all salaries in an array.  
+   ```js
+   let salaries = [3000, 4000, 5000, 6000];  
+   ```
+
+7. **Find Employee with the Highest Salary:**  
+   Given an array of salary numbers, find the **maximum salary** using `reduce()`.  
+   ```js
+   let salaries = [3500, 4200, 7000, 8500, 9000];  
+   ```
+
+8. **Using `forEach()`:**  
+   Given an array of employees, print `"Employee: [name] earns [salary]"` for each using `forEach()`.  
+   ```js
+   let employees = [
+       { name: "Alice", salary: 5000 },
+       { name: "Bob", salary: 6000 }
+   ];
+   ```
+
+#### 🟠 Arrow Functions & Iterables
+
+9. **Convert Function to Arrow Function:**  
+   Convert the following function to an **arrow function**.  
+   ```js
+   function calculateWage(hours, rate) {
+       return hours * rate;
+   }
+   ```
+
+10. **Using `Set` to Store Unique Employee IDs:**  
+    Create a `Set` with **unique** employee IDs, add a new one, remove an ID, and check if an ID exists.  
+    ```js
+    let employeeIDs = new Set([101, 102, 103]);
+    ```
+
+11. **Using `Map` to Store Employee Salaries:**  
+    Use a `Map` to store employee names as **keys** and salaries as **values**, and retrieve a specific employee's salary.  
+    ```js
+    let employees = new Map([
+        ["Alice", 5000],
+        ["Bob", 6000]
+    ]);
+    ```
+
+12. **Convert Map to an Array of Objects:**  
+    Convert a `Map` storing employee data into an array of objects.  
+    ```js
+    let employeeMap = new Map([
+        ["John", 4500],
+        ["Sarah", 5500]
+    ]);
+    ```
+
+#### 🔵 Destructuring & Variable Scope (`var` vs `let` vs `const`)
+
+13. **Destructuring Employee Data:**  
+    Given an employee object, extract `name`, `position`, and `salary` using destructuring.  
+    ```js
+    let employee = { name: "John", position: "Manager", salary: 7500 };
+    ```
+
+14. **Fix the Scope Issue (`var` vs `let`):**  
+    What will be logged in the console? Fix the issue if needed.  
+    ```js
+    function testScope() {
+        if (true) {
+            var salary = 5000;
+        }
+        console.log(salary);
+    }
+    testScope();
+    ```
+
+15. **Convert Function to Use Default Parameters:**  
+    Modify the function so that if no `hourlyRate` is provided, it defaults to `$20`.  
+    ```js
+    function calculateWage(hoursWorked, hourlyRate) {
+        return hoursWorked * hourlyRate;
+    }
+    ```
+
+#### 🟣 Advanced Programming Logic (Combining Topics)
+
+16. **Sort Employees by Salary (Descending Order):**  
+    Given an array of employee objects, sort them from **highest to lowest salary** using `sort()`.  
+    ```js
+    let employees = [
+        { name: "Alice", salary: 5000 },
+        { name: "Bob", salary: 7000 },
+        { name: "Charlie", salary: 6000 }
+    ];
+    ```
+
+17. **Find the First Employee Earning Above $6000:**  
+    Use `find()` to return the first employee with a salary greater than `$6000`.  
+    ```js
+    let employees = [
+        { name: "Alice", salary: 5000 },
+        { name: "Bob", salary: 7000 },
+        { name: "Charlie", salary: 6000 }
+    ];
+    ```
+
+18. **Calculate Employee Bonus Based on Experience:**  
+    Write a function that **calculates a bonus** based on **years of experience**:  
+    - `1-3 years`: `5%` of salary  
+    - `4-6 years`: `10%`  
+    - `7+ years`: `15%`  
+    ```js
+    function calculateBonus(salary, years) {
+        // Your logic here
+    }
+    ```
+
+19. **Convert Employee Names to Uppercase:**  
+    Given an array of employee names, use `map()` to return a new array with **uppercase** names.  
+    ```js
+    let employees = ["Alice", "Bob", "Charlie"];
+    ```
+
+20. **Filter Employees Who Worked Overtime:**  
+    Given an array of employees and their work hours, return employees who worked **more than 40 hours**.  
+    ```js
+    let workHours = [
+        { name: "Alice", hours: 38 },
+        { name: "Bob", hours: 42 },
+        { name: "Charlie", hours: 45 }
+    ];
+    ```
+
