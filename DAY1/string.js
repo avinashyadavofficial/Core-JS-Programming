@@ -66,8 +66,8 @@ let n=m.split(" "); //in place of space we can use, or any symbol
 console.log(n);
 
 let o="Avi is  a good boy";
-console.log(o.indexOf("Avi"));
-console.log(o.search("Avi"));
+console.log(o.indexOf("is"));
+console.log(o.search("is"));
 
 console.log(o.includes("Avi"));
 console.log(o.startsWith("A"));
