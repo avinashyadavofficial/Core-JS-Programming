@@ -37,8 +37,8 @@ console.log(f); // it will be added to f
 console.log(a); // not to a
 
 //copyWithin
-a.copyWithin(2,0); //replacing 2nd index to 0 index element
-console.log(a);
+// a.copyWithin(2,0); //replacing 2nd index to 0 index element
+// console.log(a);
 
 a.copyWithin(4,1,2);
 console.log(a);
