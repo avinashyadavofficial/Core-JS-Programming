@@ -1,0 +1,84 @@
+Action	Command
+List branches	git branch
+Create branch	git branch new-branch
+Create & switch	git checkout -b new-branch
+Switch branch	git switch new-branch
+Delete branch (safe)	git branch -d new-branch
+Delete branch (force)	git branch -D new-branch
+Merge branch	git merge new-branch
+Push branch	git push origin new-branch
+Delete remote branch	git push origin --delete branch
+Rebase (advanced)	git rebase main
+
+
+
+
+PR Workflow
+Step	Command / Action
+1	git checkout -b feature/xyz
+2	Make changes
+3	git add . + git commit -m "message"
+4	git push origin feature/xyz
+5	Create PR on GitHub
+6	Team reviews and comments
+7	Make fixes if needed and push again
+8	Get approved and merged
+9	git pull origin main to stay up to date
+
+*** Conflict Resolution***
+[ main ]            [ feature/login ]
+   |                     |
+Edit A line          Edit same line 
+   |                     |
+   └───── merge  ────────┘
+          ↓
+   Conflict Detected 
+          ↓
+   Manually Resolve
+          ↓
+   `git add` → `git commit`
+
+
+
+
+***Conflict Resolution**
+Git Merge Conflict Resolution - Summary
+
+1. Merge branches:
+   git merge <branch-name>
+
+2. Git will warn if there’s a conflict:
+   Auto-merging <file>
+   CONFLICT (content): Merge conflict in <file>
+
+3. Open the conflicted file.
+   Look for conflict markers:
+   <<<<<<< HEAD
+   Your changes
+   =======
+   Incoming changes
+   >>>>>>> branch-name
+
+4. Manually resolve the conflict:
+   - Choose one version OR
+   - Combine both logically
+   - Remove conflict markers (<<<<<<, ======, >>>>>>)
+
+5. Add the resolved file:
+   git add <file>
+
+6. Finalize the merge:
+   git commit -m "Resolved merge conflict in <file>"
+
+7. Push your changes:
+   git push origin <your-branch>
+
+Optional:
+- Abort merge if needed:
+  git merge --abort
+
+Tips to avoid merge conflicts:
+- Pull latest changes before starting work
+- Keep PRs small and focused
+- Communicate with team
+- Use feature branches
