@@ -11,3 +11,4 @@ while(s<e){
     e--;
 }
 console.log(a);
+console.log(a.sort((x,y)=>y-x));
