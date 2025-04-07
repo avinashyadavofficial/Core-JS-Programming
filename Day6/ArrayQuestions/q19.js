@@ -1,5 +1,5 @@
 let a= [1, 2, 3, 4, 5, 6];
-let b= a.slice(-3);
+let b= a.splice(-3);
 console.log(a);
 console.log(b);
 

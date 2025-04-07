@@ -1,4 +1,4 @@
-let a= ['apple', 'banana', 'apple', 'orange', 'apple'];
+let a= w;
 let ct=0;
 a.forEach(a => {
     if (a=== 'apple') ct++;
